@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+ul li a {
+  margin: 10px 20px 10px 0px;
+  text-decoration: none;
+}
+
+#carrito {
+  height: 60px;
+  margin-left: 10px;
+}
+
+#root div div {
+  text-align: center;
+}
+
+#pie-de-pagina {
+  position:-webkit-sticky;
+  bottom: 0;
+  margin-left: 900px;
+}
+.card-img-top
+{
+  height:120px;
+  width:120px;
+  align-self: center;
+}
+
+#imagen-de-detalle {
+  width:1000px;
+  height: auto;
+}
+.controls {
+  display: flex;
+}
+.number.inline {
+  display: inline;
+  margin: 0 10px;
+}
+#precio {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#precio::after {
+  content: '$';
+}
+
+#precio1::after {
+  content:'$';
+}
+
+#precio::after,
+#precio::before {
+  display: inline;
+}
+
+#agregar {
+  margin:10px;
+}
+
+#homename {
+  font-size: 120%;
+  font-weight: bold;
+}
