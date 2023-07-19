@@ -22,10 +22,10 @@ export const ItemDetail = ({ moneda }) => {
     <>
       <div id="precio">Precio: {formattedPrice}</div>
       <div className='itemFooter'>
-        <ItemCount initial={1} stock={moneda.stock} onAdd={(quantity) => console.log('cantidad agregada', quantity)} />
+        <ItemCount initial={1} stock={moneda.stock} onAdd={handleOnAdd} />
       </div>
       <img id="imagen-de-detalle" src={moneda.detalle} alt={moneda.valor} />
     </>
   );
 };
-
+//{console.log('cantidad agregada', quantity)} 

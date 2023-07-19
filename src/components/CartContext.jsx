@@ -52,7 +52,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  const calculateTotalQuantity = (cart, addedQuantity) => {
+  const calculateTotalQuantity = () => {
     let total = 0;
     cart.forEach((item) => {
       total += item.quantity;
