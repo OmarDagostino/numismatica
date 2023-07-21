@@ -28,4 +28,4 @@ export const ItemDetail = ({ moneda }) => {
     </>
   );
 };
-//{console.log('cantidad agregada', quantity)} 
+

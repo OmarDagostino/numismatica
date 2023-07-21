@@ -36,9 +36,10 @@ ul li a {
 }
 
 #pie-de-pagina {
+  display:block;
   position:-webkit-sticky;
   bottom: 0;
-  margin-left: 900px;
+  margin-left: 1100px;
 }
 .card-img-top
 {
@@ -71,6 +72,10 @@ ul li a {
   content:'$';
 }
 
+#precio2::after {
+  content:'$';
+}
+
 #precio::after,
 #precio::before {
   display: inline;
@@ -83,4 +88,35 @@ ul li a {
 #homename {
   font-size: 120%;
   font-weight: bold;
+}
+
+.boton1 {
+  border-radius: 5px;
+  height: 40px;
+  line-height: 16px;
+  background-color: orangered;
+  font-weight: bold;
+  color:yellow !important;
+}
+
+.botonconfirma {
+  border-radius: 5px;
+  height: 40px;
+  line-height: 16px;
+  background-color: greenyellow;
+  font-weight: bold;
+  color:black;
+  justify-self: center;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  margin: 10px;
+}
+
+.margen {
+  margin-top: 10px;
 }

@@ -58,6 +58,25 @@ export const CartProvider = ({ children }) => {
       total += item.quantity;
     });
     return total;
+    
+  };
+
+  const calculateTotal = () => {
+    let importeTotal= 0;
+    cart.forEach((item) =>{
+      
+      importeTotal += item.quantity * item.precio;
+      
+      console.log ("calculate order");
+      console.log (item.quantity);
+      console.log (item.precio);
+      console.log (importeTotal);
+    });
+    return importeTotal;
+  }
+
+  const clearCart = () => {
+    setCart([]);
   };
 
   return (
@@ -67,11 +86,12 @@ export const CartProvider = ({ children }) => {
         calculateTotalQuantity,
         addItem,
         removeItem,
+        clearCart,
         clearItem,
+        calculateTotal,
       }}
     >
       {children}
     </CartContext.Provider>
   );
 };
-
