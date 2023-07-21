@@ -1,3 +1,23 @@
+Este proyecto es un comercio electrónico de venta de monedas de colección .
+
+Autor : Omar D Agostino
+
+Tecnologías utilizadas : React / FireStore 
+
+Funcionalidad del Proyecto 
+
+Muestra las monedas existentes en la colección de documentos "coins" del proyecto ecommerce-coins de servicio de FireStore. 
+
+Se puede elegir la selección de monedas por país (segun consta en la navegacion) o ver todas las monedas disponibles.
+
+Cuando se elige ver el detalle de una moneda, se renderiza una imagen con el mismo, y la posibilidad de agregar al carrito de compras la cantidad elegida mediante botones de incremento o decremento, hasta el tope del stock de la moneda (que viene del documento pertinente de la colección antes mencionada).
+
+Al agregar una moneda al carrito, se renderiza la imagen del mismo con la cantidad de monedas que hay en el carrito, y cuando se presiona dicha imagen, se ve el contenido del mismo, pudiendo eliminar un item, vaciar por completo el carrito o realizar la compra. En este último caso le solicita en un formulario, ingresar los datos personales (nombre, apellido, telefono y e-mail). Solo cuando se han completado todos los campos se puede confirmar la compra, dando como resultado un mensaje (alert) con la identificacion de la orden (que ha sido grabada en Firestore en la colección "orders" del mismo proyecto)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -64,7 +84,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [quantity, setQuantity] = useState(initial);
+  const [buttonVisible, setButtonVisible] = useState(true);
 
   const increment = () => {
     if (quantity < stock) {
@@ -15,6 +16,15 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     }
   };
 
+  const handleAddToCart = () => {
+    onAdd(quantity);
+    setButtonVisible(false); 
+  };
+
+  const resetButtonVisibility = () => {
+    setButtonVisible(true); 
+  };
+
   return (
     <div className='Counter'>
       <div className='Controls'>
@@ -22,12 +32,20 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <h4 className='number inline'>{quantity}</h4>
         <button className='button' onClick={increment}>+</button>
       </div>
-      <div>
-        <button className='button' id="agregar" onClick={() => onAdd(quantity)} disabled={!stock}>
-          Agregar al carrito
-        </button>
-      </div>
-    </div> 
+      {buttonVisible && (
+        <div>
+          <button className='button' id="agregar" onClick={handleAddToCart} disabled={!stock}>
+            Agregar al carrito
+          </button>
+        </div>
+      )}
+      {!buttonVisible && (
+        <div>
+          <p>Producto agregado al carrito.</p>
+         
+        </div>
+      )}
+    </div>
   );
 };
 

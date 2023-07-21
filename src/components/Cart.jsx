@@ -2,10 +2,9 @@ import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
 import CartItem from "./CartItem";
 import { Link } from "react-router-dom";
-import CheckoutForm from "./CheckOutForm";
 
 const Cart = () => {
-  const { cart, clearItem, calculateTotalQuantity, clearCart } = useContext(CartContext);
+  const { cart, calculateTotalQuantity, clearCart } = useContext(CartContext);
 
   if (cart.length === 0) {
     return (

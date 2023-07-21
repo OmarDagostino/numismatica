@@ -36,9 +36,9 @@ ul li a {
 }
 
 #pie-de-pagina {
-  display:block;
-  position:-webkit-sticky;
-  bottom: 0;
+  display:inline-block;
+  position:fixed;
+  top: 100px;
   margin-left: 1100px;
 }
 .card-img-top
@@ -49,7 +49,7 @@ ul li a {
 }
 
 #imagen-de-detalle {
-  width:1000px;
+  width:900px;
   height: auto;
 }
 .controls {

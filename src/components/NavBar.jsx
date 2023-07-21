@@ -26,7 +26,6 @@ const NavBar = () => {
           const categories = [...new Set(data.map((item) => item.category))];
           categories.sort(); 
           setCategories(categories);
-          console.log(data);
         }
       });
   }, []);

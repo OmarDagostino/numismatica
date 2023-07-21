@@ -66,11 +66,7 @@ export const CartProvider = ({ children }) => {
     cart.forEach((item) =>{
       
       importeTotal += item.quantity * item.precio;
-      
-      console.log ("calculate order");
-      console.log (item.quantity);
-      console.log (item.precio);
-      console.log (importeTotal);
+     
     });
     return importeTotal;
   }

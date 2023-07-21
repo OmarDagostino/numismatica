@@ -27,9 +27,14 @@ function App() {
           </Routes>
         </CartProvider>
         <div id="pie-de-pagina">
-          <p>  Todas las monedas comercializadas en</p>
-          <p>   este sitio tienen su código KM</p>
-          <p>  correspondiente y son originales</p>
+          <p>  Todas las monedas comercializadas en
+                este sitio tienen su código KM
+                correspondiente y son originales
+                - KM es el acrónimo de Krause-Mishler. 
+                Este código pertenece al sistema de clasificación
+                 establecido en el Standard Catalog of World Coins, 
+                 también llamados «Catálogos Krause» e identifica univocamente a una moneda -
+          </p>
         </div>
       </BrowserRouter>
     </div>

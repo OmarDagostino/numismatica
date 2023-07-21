@@ -15,7 +15,7 @@ export const ItemDetail = ({ moneda }) => {
     }
     addItem(item, quantity)
   } 
-  console.log (moneda) 
+
   const formattedPrice = moneda.precio.toLocaleString();
 
   return (

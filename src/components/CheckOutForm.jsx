@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { getFirestore, addDoc, collection } from "firebase/firestore";
 import { CartContext } from "./CartContext";
+import { useNavigate } from 'react-router-dom';
 
 const CheckoutForm = ({total}) => {
   const [formData, setFormData] = useState({
@@ -10,8 +11,13 @@ const CheckoutForm = ({total}) => {
     email: '',
   });
   const { cart, clearCart } = useContext(CartContext);
+  const navigate = useNavigate();
   const sendOrder = () => {
-  
+    if (formData.nombre.trim() === '' || formData.apellido.trim() === '' || formData.telefono.trim() === '' || formData.email.trim() === '') 
+    {
+      alert("Por favor complete todos los campos del formulario antes de confirmar la compra.");
+      return;     
+    }
     const order = {
       buyer: formData,
       items: cart,
@@ -19,14 +25,13 @@ const CheckoutForm = ({total}) => {
     }
     const db = getFirestore ()
     const orderCollection = collection (db, "orders")
-
-    console.log (total)
   
     addDoc (orderCollection, order).then (response => {
       if (response.id) {
         clearCart ();
         const orderId = response.id;
         alert ("Su orden "+ orderId + "ha sido realizada!");
+        navigate('/all');
       }
     })
   

@@ -5,8 +5,7 @@ import CheckoutForm from './CheckOutForm';
 const CheckoutPage = () => {
     const { calculateTotal } = useContext(CartContext);
   const importeTotal = calculateTotal(); 
-  console.log ("importe total en CHKOUTPAGE")
-  console.log (importeTotal)
+  
   return (
     <div>
     
