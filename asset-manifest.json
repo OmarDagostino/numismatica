@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/OmarDagostino/numismatica/static/css/main.e0a934d6.css",
+    "main.js": "/OmarDagostino/numismatica/static/js/main.82e374ba.js",
+    "static/js/787.dcc73137.chunk.js": "/OmarDagostino/numismatica/static/js/787.dcc73137.chunk.js",
+    "index.html": "/OmarDagostino/numismatica/index.html",
+    "main.e0a934d6.css.map": "/OmarDagostino/numismatica/static/css/main.e0a934d6.css.map",
+    "main.82e374ba.js.map": "/OmarDagostino/numismatica/static/js/main.82e374ba.js.map",
+    "787.dcc73137.chunk.js.map": "/OmarDagostino/numismatica/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0a934d6.css",
+    "static/js/main.82e374ba.js"
+  ]
+}
